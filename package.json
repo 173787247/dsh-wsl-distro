@@ -1,0 +1,21 @@
+{
+  "name": "dsh-wsl-distro",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: current WSL distro facts and multi-distro warnings.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/173787247/dsh-wsl-distro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/173787247/dsh-wsl-distro/issues"
+  },
+  "homepage": "https://github.com/173787247/dsh-wsl-distro#readme",
+  "type": "module",
+  "main": "index.js",
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test test/distro.test.js" },
+  "files": ["index.js", "lib", "cordis.patch.yml", "README.md", "LICENSE"],
+  "keywords": ["dsh-plugin", "deepseek-harness", "wsl", "distro"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } }
+}
