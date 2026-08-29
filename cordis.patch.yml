@@ -1,0 +1,5 @@
+- insert:
+    - id: dsh-wsl-distro
+      name: dsh-wsl-distro
+      config:
+        timeoutMs: 15000
