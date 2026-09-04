@@ -1,7 +1,7 @@
 {
   "name": "dsh-wsl-distro",
-  "version": "0.1.0",
-  "description": "DeepSeek Harness plugin: current WSL distro facts and multi-distro warnings.",
+  "version": "0.2.0",
+  "description": "distro_info: structured wsl -l -v, default vs current distro, UNC path safety.",
   "license": "MIT",
   "repository": {
     "type": "git",
