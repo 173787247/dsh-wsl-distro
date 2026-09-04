@@ -48,7 +48,7 @@ export function apply(ctx, config = {}) {
     timeoutMs,
     isConcurrencySafe: () => true,
     async execute() {
-      const list = wsl ? await listDistros() : { ok: false, error: "not WSL" };
+      const list = wsl ? await listDistros() : { ok: false, error: "not WSL", distros: [], defaultName: "", raw: "" };
       const info = { wsl, current, os, list };
       info.advice = buildDistroAdvice(info);
       return info;
