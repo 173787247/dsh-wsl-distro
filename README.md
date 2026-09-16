@@ -22,3 +22,15 @@ npm test
 ```
 
 MIT
+
+## Where it sits
+
+Reports wsl -l -v: default distro vs the one the agent is in, plus UNC path safety.
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["distro_info"] --> wsl["wsl -l -v"]
+```
+
+Suite diagram and version snapshot: [dsh-wsl-kit](https://github.com/173787247/dsh-wsl-kit#how-the-pieces-fit). This plugin is **0.2.0** (full). Do not copy that matrix into this README.
+

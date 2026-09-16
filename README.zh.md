@@ -23,3 +23,15 @@ npm test
 ```
 
 MIT
+
+## 在套件里的位置
+
+报告 wsl -l -v：默认发行版和 agent 所在发行版，以及 UNC 路径是否安全。
+
+```mermaid
+flowchart LR
+  agent["dsh agent"] --> tool["distro_info"] --> wsl["wsl -l -v"]
+```
+
+整套关系图和版本快照：[dsh-wsl-kit 中文说明](https://github.com/173787247/dsh-wsl-kit/blob/master/README.zh.md)。本插件是 **0.2.0**（full）。不要把那份总表抄进本 README。
+
